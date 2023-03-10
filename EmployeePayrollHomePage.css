@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100vw;
+    height: 10vh;
+}
+
+.header1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 15%;
+    height: 100%;
+
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 52%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+#H1 {
+    color: rgb(158, 248, 40);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+.logo img {
+    height: 30px;
+    width: 30px;
+    border: 2px solid rgb(158, 248, 40);
+}
+
+.header2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 57%;
+    height: 100%;
+    color: blue;
+    font-weight: bolder;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90vw;
+    height: 80vh;
+    margin: 10px;
+    background-color: rgb(245, 243, 243);
+
+}
+
+.sectionHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    width: 80%;
+
+}
+
+.SH1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.SH2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+}
+
+.SH2 img {
+    width: 25px;
+    height: 25px;
+    border-radius: 30%;
+}
+
+#search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 30%;
+    cursor: pointer;
+
+}
+
+#adduser {
+    border-style: none;
+    height: 50%;
+    width: 60%;
+    background-color: rgb(3, 175, 3);
+}
+#adduser a{
+color: white;
+text-decoration: none;
+}
+
+.MainTable {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: white;
+    font-size: 12px;
+  }
+  th{
+    background-color: rgb(3, 3, 78);
+    color: white;
+  }
+  td, th {
+    text-align: left;
+    padding: 8px;
+  }
+  tr{
+    border: 2px solid rgb(3, 3, 78);
+  }
+ 
+  
+  

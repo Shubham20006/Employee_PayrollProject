@@ -1,0 +1,49 @@
+{
+  "Employee": [
+    {
+      "name": "Shubham Chaudhari",
+      "departments": "[\"HR\",\"Engineer\"]",
+      "gender": "male",
+      "salary": "10000",
+      "date": "17/April/2022",
+      "notes": "Hii",
+      "id": 1
+    },
+    {
+      "name": "Suraj",
+      "departments": "[\"Sales\",\"Finance\"]",
+      "gender": "male",
+      "salary": "20000",
+      "date": "19/Feb/2022",
+      "notes": "Hlooooo",
+      "id": 2
+    },
+    {
+      "name": "kunal",
+      "departments": "[\"Sales\",\"Other\"]",
+      "gender": "male",
+      "salary": "40000",
+      "date": "14/June/2021",
+      "notes": "Test",
+      "id": 3
+    },
+    {
+      "name": "shyam",
+      "departments": "[\"HR\"]",
+      "gender": "male",
+      "salary": "10000",
+      "date": "20/May/2023",
+      "notes": "good",
+      "id": 4
+    },
+    {
+      "name": "abhishek",
+      "departments": "[\"Sales\",\"Finance\"]",
+      "gender": "male",
+      "salary": "30000",
+      "date": "18/March/2021",
+      "notes": "hllo",
+      "id": 5
+    }
+  ]
+}

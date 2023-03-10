@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmployeePayrollForm</title>
+    <link rel="stylesheet" href="EmployeePayrollForm.css">
+    <script defer src="index.js"></script>
+    <script src="table.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header1">
+            <div class="logo">
+                <img src="data:image/png;base64,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"
+                    alt="logo">
+            </div>
+            <div class="heading">
+                <div id="H1">EMPLOYEE</div>
+                <div id="H2">PAYROLL</div>
+            </div>
+        </div>
+        <div class="header2">
+            Add Employee Payroll UI/UX Design
+        </div>
+    </header>
+
+    <section class="section">
+        <form class="Form">
+            <div class="FormContent" id="emp">Employee Payroll Form</div>
+            <div class="FormContent">
+                <div class="leftside">Name</div>
+                <div class="Inputside"><input type="text" id="name" name="name" required></div>
+            </div>
+            <div class="FormContent">
+                <label class="leftside" for="profile">Profile image</label>
+                <div class="Inputside">
+                    <input type="radio" class="RB" name="Profile" value="1">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgVFRUYGBgSGBgSGBgYEhgYGBkYGBgZGhgaGBgcIS4lHB4rHxgYJjgmKy80NTU1GiQ7QDs0Py40NTEBDAwMEA8QHBISHzQsJCs0NDQxMTQ0NDQ0NDQ0MTQ0NDQ0NDQ0NDE0NDQxPTE0NDQ0NDU0NDQ0NDQxNDQ0NDQ0NP/AABEIANYA6wMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAgMEBQYHAQj/xAA9EAACAQIDBQUGBAUCBwAAAAABAgADEQQSIQUGMUFRImFxgZEHEzJSocEUQnKxYoKy0fAz4SNjc5KiwvH/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EACERAQEAAgMBAAIDAQAAAAAAAAABAhEDITESQVETIjJh/9oADAMBAAIRAxEAPwDr8IQgEIQgEIQgEIQgEIQgEJ4zAC5IAHEk2A8TM/tDfbAUbhsTTZgbZad6pv0OQG3nGxoYTCYj2oYYfBSrP3kIgPqxP0lRX9q7/lwi2/ixBP0CCZ+5+x1KE47U9r9ccMLS86j/ANoUvbJV/Ng6Z8MQ6/uhl3B2KE5phPa5TP8AqYV1/RVR/wCoJL3A+0bAPYGo9MnlUpsB5suZR6yfUGuhI2Cx9KsualUSovVHVx55TpJM0CEIQCEIQCEIQCEIQCEIQCEIQCEIQCEIQCEaxWISmjO7KiKMzOzBVUDmSeE5Nvb7VWYmlgBlXgcQ69o/9NGHZH8TC/cOMDpe2dvYfDLevVVSRdV4u36UGp8eEwO1/aZUa64amEHz1LM/iEHZXzLTlwxDu5d3Z3c3Z3YszHvY6mPmraccssvIJO2NsV8QT7+s9TuZzkHgg7I8hKtTFMb6yRhsI7myIzfpUn9pN69DS14PU0l1g916zsAUKjmSVH0JuZfU9zKRUku5txOZQB6iZ3G5hlXPKo0kdeM2mN3ScAmmc47xr6i4mZqYF0fK6lSORFp0mUS42elUaZIjgWTcPTFo1XABnP63WBh6jIwdGKsODKxVh4MNRNnsXfzF07B3FZByqDtW7nGt+9rzEZ4unXtHc8Hcti78YavZXb3LnTLUICk9FfgfOx7pp58y1cTpLbdvfzE4MhQ3vaI40XY2A/5b6lPDVe6dcMrfVfQkJRbs704fHJmovZ1HbpPpUTxHNf4hcftL2dAQhCAQhCAQhCAQhCAQhCASs29t2jhKRrV2sB8KjV3a2iovM/QcSQNYbw7cpYOg1esbKuiqPidz8KIOZP0AJOgM4LtvblXG1jWrHqqID2KafKv0u3EnyAzll8wN75b3YjHPd+xSQ3SirHKvRnP5n7zw5Ac84hlhjaYtK9Vkxy+psTUOk8cxFIxbCZ/ItdgbKOIY9oKqcSRceHETomzcIiIqh1ygGwHZU954k+cyWxNnhUD13yJfMtNWKg20u5vrxmkTEUmsUqqD+UC5PDgBwtpOOV7d+PHUXKYVW1UX8Lj04RjE5lIvnAHLMApt11kRnakudyz31yrTI8mIFv2MzmM3te5C0wFGl8nDxDcfWSd+OvnrU18h/MoLHgiM3oRcdZX1tl27IqIwOuRwLX7hxU+Fpk8VvC7KUtkVtSyXRj466julOKzobqx+x8pZKzbGpxmxyLsqFP09tfpqJnsZTZWyt5HkZPwG2nNrsVZdRqbXH27pYYikuJChiEY27Vr2PCx11Ekur2xlhL3GUdo1nk3bWznoOUbUHVWtow6j+0qy07yOFOlo28QGilW81rSJGAxL03WpSdkdDdXU2YH+3UHQ8DO37j79rirUK+VMRbQjRKtuOT5X6r5jmBxShSjoupBBIIIIINiCNQQeR75j61VfT0JhPZ7vn+JUYfEMPfoOw/D3qj/3A4jmNRztu51l2CEISghCEAhCEAjeIrpTRndgiIpd2Y2CqouST0AEcnI/bJvRqMBTb5amIIPmlM/Rz/J3wMVvxvU2PxBfVaNIlKKHkt9XYfM1gT0FhyuaNMTaRjEzNmxKqV808QSODHFeTWhMQSdsrC+8qqnL4jy0ErKby12VTdg4Q2dyqAjja5v9pzz6jWM3Wx2rglCB1fMSApHcp4AHhImH2sKYutPM4Fhc2APgoF/OPJsKqUFMuGbTgCCO4m+p75f7K3RyfFbvubzz27r1yMicFicU9+APK1rS5wu4Tkgub24C/CdFwGFSmLADTnaSK9YTrjj13WLe+o5Vjd0ytxl4cJ4m7N1sONpv8Xil8ZARxeZ1GtMRQ3VKt2hJtbZeUg34C17el5rMQy8pCxKBlPhF/ZpRbZwyV6FhYMAct/yuAbgdAbfWc3Zb8ZrcTiGRyvfp3Hl9/WZvaFPJUYDgTmHdm1t9Z1xefkn5RAkkUUjYMeoy5XpySUFhItZ5MtIGJW0xj6HMFiWRw6MVZCGVgbEMDcEHred+3J3lGNoXawrU7LVUcyfhdR8rWPgQRPnak9jNHuvt9sLiErJcgdl0H50PxL48CO8Cdf8ANV9FQjeFxCVEV0YMjqHVhwKsLg+hjk6AhCEAhCECv2/tVMLh6uIf4aKl7XtmbgijvZiq+c+YMbi2q1Hq1GzPVZnY9WY3Nu7kB0AnWvbbteyUcIp+MnEVBf8AKt1pgjoWzn+QTj7SUFoFZ6hjloQxaAMWyxNoU/SM1e7yZKL1uYbKvjl/3B8pkqc02HqgYUKpNw7O3jYAaeBE5cnjfH/ptd2sZdySeFgP7zb0685Nu/XysBfU2b1nS8CC4B7p5ZdXT1+zaeSTGa2DuLlj6x97AfEB4mVuP2iEFiwJPCxnTz1PfEepRF7RP4UyOmOGpvwiqu2BwXp1/wAvE0uqaroRpItSrYWguNUntuL98RUAYXVgfAyZSoxm33GcmUu1O1kfquU+K/8A2XO81LK46VBp4jjKTEt/wwP4vtOnHfHDknqIGj9EyOojqGdK4J3vNJFrteNvUjJe8zjipphHaLGNMY9h50vg7f7KNpl8P+HY3NO7pf5GPaXyY/8Al3Tezje4eK90yPyBs36To30N/Kdklx8BCEJoEIRGIqhEZzwRWc+Cgk/tA+dvaFtH3+0MS17qj/h07hSGU2/nDnzmVeLeuWJZjdnJdj1ZjmP1JiGkCQ0cV43lgIDpMTaAilEIUst8BVGRxbQX0vrqOP0EqbS72LgQ9Gs99VZFHnmP2nPOzXbpxy3LUSd3Az4hB82noZ0zae1GoKFXiR0mQ3CwX/GBYXyKxHmQJsNv7DeuoKPlKjT/ADrPNl7uPVjNY9sRtXblUm5qin4kEnyMpfxrO2Y4hnPHW/0EmYzdooxzo5N9STx9ZHTY92Fk4dSZqYyz1L9baTYdN6ytlubSh2wGR2Bdlt0M6buXs33WHbTV9fITI7w7Mzu7WF8x0I74mOtUu7uMTTxiXsalX9x+80WynvYpUvbkSf2vGcPsbXVF8SsvcBsdFObKAe7SXOX8M4yqne6n/pt3sPUTM1qZyBiCAzGxtoes3G9lC9JT8jqft95SbcUrSZDoodCgtwupvaTG61Eyx3LWaKxDNPXaMs09EjyvWeN3nkUFlCWiqb2ivdz0U5dq3m6r3RZ2bY1fPRRueXKfFez9pxndRewvhOrbpVL03X5Xv5MB9wYngvYQhNAlNvjVK4DFsNCMNWsehNNgP3lzKLflCdn4sDiaFT+mB8yCKklcA/yGe/gH+UzOxGgBJX4J/lM8OFf5T6RsRwIsCKNNhyPpPAJQoCancQB6j0TqHCVAOpptcj0YzMWlpuvtD3GKpPyzZG/S/ZP738pzzm8bG+PL5yldH3bpZarnQAM1O3eCD+1pskfSV+JRMoZbXQhi1gC3I3PPQ/SevisotPLP6vde6lYrCI47Q15GZ9tnA1AgsOZbkFHExGL22b5F1PCSsNgQ9J8z9t1Njm4dPtNfW5qJ867q3XaVJEyK62UZeIvpM9j8VSqN8VjrY20PjMCEei7A/McwuSL+Zishd1e9iDx107vCPrK9M/1jY4d1PiIo1RK+nTXKLNZuevGeFzLlnZ1VknpzbK56ZUcSRbyN5ld6nIWmp53Y+QUfczVO/wAPcb/QzF7zYpXrHLbKgCC3C/FreZ+kYat25ct1jf8AqkIjbJJInpS89H08iGFjgj3u4hxaXex4GnueNGeAxodA3W+BfCdK3QbtVB1CH0LD7zm26o7C+E6Nul8b/oX+qWeK1UIQmgSLtSjno1E+dHX1UyVPCIHNV2MtuA9Iltjr0HpNBUXKStvhJHobRh3jQoW2Qvyj0jT7HX5R6S8Z+6NNWEukZ2rsRD+UekrMXsFPlmvauI04DSag5ftHZ5TUcJWmdNx+y84OnGYXbGzjTPDS9pizQlYLeyuiBGIdRaxYtcAeB1850XG4nOish/1ArDwaxnHlE6Fu1iy+GQHjTJp+Q4fQzhy4zW49HFyW3VqNjs9MG9+1zisBt2uVCJTdradlePmZNdfe1VQ/D/aaWgUpIQg162nDGz8vRq3xj8fgMT8b0l7X/MW/mL6SvR3XjTHkwJlttTE12Y9p7dLm0jYdmHETpMprxmxD/EOTfI69+n2MucMbgExOa8VRFhOWVJ0pt68QQqICRcsTYkaAAa+szEnbfxues1vhTsDy4n1vK4NPThjrGPLnlvKhzaeo88KwVJvrTB3NGahizGXMYwJESRHFESTNrp0DdYdhfATpO6Ka1G7kX+on7TnG7HwL4CdT3XpWpFvncnyAA/cGWeIuYQhNAhCEDM7ZXJUPRgHHnofqDKp6s028GGzIHHGmdf0n/e0y70pUJNSQsTUkwpI1WheVNXav9/JOHcQ/CT33VpFT2ylZi97kBQ+I+k0FbEkDSZDbtRmvM5eGmUHGb7dSgfwhcDhVYHwyrMOKes6rubhLYBQR/qM7/WwP0nDmv9Xbhn9kegArZ+VuPMdbyzpbUpKvEE9/WVBOUlT1kbEYcW0II7+I8xPN1e3o3YtNpbfRlyoo9JT/AI641E8FMdFHlf7xLqtraeQt94+tGy1rA8JIpG7W5SGp6SVh5NjBYxLO46Ow+pjIWT9t0ildwRxYsO8NreQ0W89kvTx30pYuLWlEtTmdobc6SMY84MbCTcAI2V1jyrPQku1rfbsjsL4CdiwFDJTROaqL+PFvqTOZez/B53QW7KAO3gvAeZsJ1Wax8QQhCaBCEIHjoGBU8GBB8DMLjnNN2RuKn1B1B8xN3KPeXZQqJnUdtBr1ZOJHlx9YGXOLEbbFCIOFEQcIIQ9+JEj18UI4uCBNhfWWeG3Zd+K5B1b+3GNrGWqVcxsNSeUeobp4jENbIUU8XcFQB3A6mdG2VsCjQ7Srmf5iNf5RyltmmbLfW9yeMTgPZ7hcOQ7Bqrj57FAeuQC3reT8cLCwAA6AWHpNFiBcWma2geM8/NNOvDpjtqiz36yNxEl7WW8rkbSeeO1RMSjA6cIInWSXrG1pGZ5Nds0sNJVEyCjaySjzUhtZLhqVSwqIj24Zlva/SR8TuYlQMcOAjrY5cxyOD43KEW8IrDPNfsymVUX4nU/YT08UuXV8cuWY63+XKdq7HrYc2q0yvRuKHwYaSrYzvb5XBR1DKdCGAIPiDM7tXcfDVQfdr7l+RTVfND9rTd4tePO5AZ5ll9trdTE4ckuhZPnS7L58185QtMq8MbZp7NR7Pt2TjcSC63oUCKlUkaOfy0/5iNf4QeompGnVvZ7so0cKjsLPXCuQRqFt2B6En+bumphCdJNMiEISghCEAhCEDN7R2Exe9IDK+pBNgp5+Ufwm7yjWo1z0XQevEy9iXMCNhsBSQ3VAD1Op9TJQMavFAwFmIaLvE3gNFr6c+UqdoUA9x8Ld/A+Mtqi3kTEKp0fTow4eczljMpqrjlcbuMBtXCupIdSOnQ+BlITadMxOHcKQVDp3jMPSY/aeyqZYlA6HoDcehnny4LPHac0vqhd5Gd5Y1NmnlU9U/wB4hNlXOrnyUCY/gyP5MUBWtH8OGc5VBJ7vv0lvh9k0+alv1H7CW+Gw4UWACjuAAnbHg/dZvJ+kfZWzslmbVuQ5D+5l+ht4mQ0b5fWP056McZJqOVtvqdSklZBR4+ryolBpRbS3SwtYlimRjxKdm56kcJcKY5SUk2HGZsl9Vz/Eezxs4VMrqxtm4ZR1YdPCdI2BsenhaK0aQsF7TNbVmPxM3efoAByk2jSyjv5mOTMxkvQIQhNAhCEAhCEAhCEAhCEBtkiRHp4yQGwZ4TPSIkwPCYlp6YkmBGehbVGKeBuPQyBiUc6MtN+8jKZZvEWgZTGYQrxpDXo0hZeiAeJmxrpmFjreUOLwmU2lFehbuHgI6i315+M9y2ikWVD1OPpGEkhID6x0GIpISbAEnoBLXDbM5v8A9o+5gRsNRZzYDTmeQlxh6AQWHHmeZjiIALAWA5CezKiEIQCEIQCEIQCEIQCEIQCEIQCEIQCJZBFQgMNTMaaTIQK1jACTzSU8hE/h16fWBBtGK+FDCWn4Ze+e/h1/wyjHYvC5T3RkLNq+EQ8VB8dY5TpKvwqq+CgftGxlMPs2q3BCB1bsj6y2w2xANXa/cug9TLiEbCKNFUFlUD/OZ5xcISAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCED/2Q=="
+                        alt="">
+                    <input type="radio" class="RB" name="Profile" value="2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuki5lrBmRRvk5KhjrMwByvTFz2c5Cb9vWTA&usqp=CAU"
+                        alt="">
+                    <input type="radio" class="RB" name="Profile" value="3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTee1DMyd_CxOFk0quvMGTZG1ycKrGMxxPcEA&usqp=CAU"
+                        alt="">
+                    <input type="radio" class="RB" name="Profile" value="4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8LnsAejtzN7cp0DLpTWCDnz8yeaCvPifY1Q&usqp=CAU"
+                        alt="">
+                </div>
+            </div>
+            <div class="FormContent">
+                <label class="leftside" for="Gender">Gender</label>
+                <div class="Inputside">
+                    <input type="radio" class="RB" name="Gender" value="male">
+                    <label class="gndr" id="gndr1" for="Gender">Male</label>
+                    <input type="radio" class="RB" name="Gender" value="female">
+                    <label class="gndr" id="gndr2" for="Gender">Female</label>
+                </div>
+
+            </div>
+            <div class="FormContent">
+                <label class="leftside" for="department">Department</label>
+                <div class="checkboxall">
+                    <input type="checkbox" class="RB" name="department" value="HR">
+                    <label for="department">HR</label>
+                    <input type="checkbox" class="RB" name="department" value="Sales">
+                    <label for="department">Sales</label>
+                    <input type="checkbox" class="RB" name="department" value="Finance">
+                    <label for="department">Finance</label>
+                    <input type="checkbox" class="RB" name="department" value="Engineer">
+                    <label for="department">Engineer</label>
+                    <input type="checkbox" class="RB" name="department" value="Other">
+                    <label for="department">Other</label>
+                </div>
+            </div>
+            <div class="FormContent">
+                <label class="leftside" for="salary">Salary</label>
+                <div class="salary">
+                    <select id="slry" name="salary" required>
+                        <option value="">Select salary</option>
+                        <option value="10000">10000</option>
+                        <option value="15000">15000</option>
+                        <option value="20000">20000</option>
+                        <option value="30000">30000</option>
+                        <option value="40000">40000</option>
+                        <option value="50000">50000</option>
+                        <option value="60000">60000</option>
+                        <option value="70000">70000</option>
+                        <option value="80000">80000</option>
+                        <option value="90000">90000</option>
+                        <option value="100000">100000</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class="FormContent">
+                <label class="leftside" for="salary">Start Date</label>
+                <div class="date">
+                    <div class="date1">
+                        <select id="day" name="Day" required>
+                            <option value="">Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select id="month" name="Month" required>
+                            <option value="">Month</option>
+                            <option value="Jan">January</option>
+                            <option value="Feb">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="Aug">August</option>
+                            <option value="Sept">September</option>
+                            <option value="Oct">October</option>
+                            <option value="Nov">November</option>
+                            <option value="Dec">December</option>
+                        </select>
+                        <select id="year" name="Year" required>
+                            <option value="">Year</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+            <div class="FormContent">
+                <div class="leftside">Notes</div>
+                <textarea name="Notes" id="txtarea" required></textarea>
+            </div>
+            <div class="FormContent9">
+                <div class="btn1">
+                    <button type="reset"> Cancel</button>
+                </div>
+                <div class="btn2">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+</body>
+
+</html>

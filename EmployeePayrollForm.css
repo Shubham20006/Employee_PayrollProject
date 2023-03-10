@@ -1,0 +1,236 @@
+body {
+   margin: 0;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100vw;
+    height: 10vh;
+}
+
+.header1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 15%;
+    height: 100%;
+
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 52%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+#H1 {
+    color: rgb(158, 248, 40);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+.logo img {
+    height: 30px;
+    width: 30px;
+    border: 2px solid rgb(158, 248, 40);
+}
+
+.header2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 57%;
+    height: 100%;
+    color: blue;
+    font-weight: bolder;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+    width: 100vw;
+    height: 80vh;
+    margin: 10px;
+    background-color: rgba(247, 241, 241, 0.932);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    width: 50%;
+    height: 95%;
+    background-color: white;
+}
+
+.FormContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    height: 10%;
+}
+#emp{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.leftside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 25%;
+    height: 100%;
+
+}
+
+.Inputside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 75%;
+    height: 100%;
+}
+
+input {
+    width: 100%;
+    height: 50%;
+}
+
+.Inputside img {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.RB {
+    width: 16px;
+    height: 16px;
+}
+
+.gndr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 15px;
+    width: 13%;
+}
+
+#gndr1 {
+    width: 11%;
+}
+
+#gndr2 {
+    width: 15%;
+}
+
+.checkboxall {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    font-size: 15px;
+    padding-right: 15px;
+}
+
+.salary {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 60%;
+    width: 75%;
+}
+
+#slry {
+    width: 50%;
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.date1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 23px;
+}
+
+#sd {
+    width: 30%;
+    height: 100%;
+}
+
+#txtarea {
+    position: relative;
+    top: 10px;
+    width: 75%;
+    height: 60px;
+
+}
+
+.FormContent9 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    top: 28px;
+    width: 80%;
+    height: 15%;
+}
+
+.btn1 {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+
+.btn2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 43%;
+    height: 50%;
+}
+
+button {
+    height: 70%;
+    width: 100px;
+}
